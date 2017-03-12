@@ -36,9 +36,9 @@ function Database(url) {
 
 }
 
-Database.prototype=Object.create(EventEmitter.prototype);
+Database.prototype = Object.create(EventEmitter.prototype);
 
-
+Database.prototype.constructor = Database;
 
 Database.prototype.connect = function() {
 
